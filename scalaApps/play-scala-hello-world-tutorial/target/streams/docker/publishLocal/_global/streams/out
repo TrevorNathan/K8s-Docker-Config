@@ -1,0 +1,110 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t play-scala-hello-world-tutorial:1.0-SNAPSHOT .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /home/trevor/Desktop/docker/scalaApps/play-scala-hello-world-tutorial/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  45.53MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/16 : FROM openjdk:8 as stage0[0m
+[0m[[0m[0minfo[0m] [0m[0m8: Pulling from library/openjdk[0m
+[0m[[0m[0minfo[0m] [0m[0m50e431f79093: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0mdd8c6d374ea5: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0mc85513200d84: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m55769680e827: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0me27ce2095ec2: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m5943eea6cb7c: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m3ed8ceae72a6: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0me27ce2095ec2: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m5943eea6cb7c: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m55769680e827: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m3ed8ceae72a6: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0mdd8c6d374ea5: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0mdd8c6d374ea5: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0mc85513200d84: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0mc85513200d84: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0me27ce2095ec2: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0me27ce2095ec2: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m5943eea6cb7c: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m5943eea6cb7c: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m55769680e827: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m55769680e827: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m3ed8ceae72a6: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m3ed8ceae72a6: Download complete[0m
+[0m[[0m[0minfo[0m] [0m[0m50e431f79093: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m50e431f79093: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0mdd8c6d374ea5: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0mc85513200d84: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0m55769680e827: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0me27ce2095ec2: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0m5943eea6cb7c: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0m3ed8ceae72a6: Pull complete[0m
+[0m[[0m[0minfo[0m] [0m[0mDigest: sha256:f815268bb2af51279b3361666c0b702e1a61f9eec83d817c6df49b78af768922[0m
+[0m[[0m[0minfo[0m] [0m[0mStatus: Downloaded newer image for openjdk:8[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> cdf26cc71b50[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 2/16 : LABEL snp-multi-stage="intermediate"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 20810af284ad[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 20810af284ad[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 595ce3473178[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/16 : LABEL snp-multi-stage-id="1425a280-2b42-4b47-a059-ac658b3d9388"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 6c0d021aeea2[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 6c0d021aeea2[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e8840f341a38[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 4/16 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in bdc47b4096e1[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container bdc47b4096e1[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> a1dd5caa73ca[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 5/16 : COPY opt /opt[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 21358f2c7490[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 6/16 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in f04c5e111677[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container f04c5e111677[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 9318853bf65f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 7/16 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in ec0cc0238af4[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container ec0cc0238af4[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 4d68404b9e83[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 8/16 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/play-scala-hello-world-tutorial"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 988f6b29074f[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 988f6b29074f[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 85bddd63fcc6[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 9/16 : FROM openjdk:8[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> cdf26cc71b50[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 10/16 : USER root[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in bbd0e279e729[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container bbd0e279e729[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 8b39c2c0f05d[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 11/16 : RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 499426ded775[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 499426ded775[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 07c270c75e34[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 12/16 : WORKDIR /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 801f8292f757[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 801f8292f757[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 1745fac1aa2a[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 13/16 : COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f66372ee4dfa[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 14/16 : USER 1001:0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 772505b85fe9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 772505b85fe9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 3a8d6e0bbe2f[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 15/16 : ENTRYPOINT ["/opt/docker/bin/play-scala-hello-world-tutorial"][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 12ebfd163bbe[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 12ebfd163bbe[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 35ba9f9a1712[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 16/16 : CMD [][0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 8b8c3d8fcab9[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 8b8c3d8fcab9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 2c22560c49ae[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 2c22560c49ae[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged play-scala-hello-world-tutorial:1.0-SNAPSHOT[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate image(s) (labeled "snp-multi-stage-id=1425a280-2b42-4b47-a059-ac658b3d9388") [0m
+[0m[[0m[0minfo[0m] [0m[0mDeleted Images:[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:85bddd63fcc67f75d9efcc84695f173c40cb7e294e92542127f9ba838dcbd47e[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:64ae49ad59746a2f5e107d69aef6f3463c0c721f92df9a9a0f6151a9be51b61e[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:4d68404b9e838f92f0239a4cbc8b07b5cdd9dd38ceec2cb50ca77bb24c05859f[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:9029c7f0a40d2bb09a716c8a5238697a5f50429503d4747170bc37f858df2aca[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:9318853bf65fe492640afb1e843f8293ccd2012d355a1dd30fac50151c7139df[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:21358f2c74900aaf42f00ce210f80e2e3ab7da178b9cbc627305d3ea6a44d22f[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:a7b5815a31db39d0610ab65a0256406505b14c47d3238f1cafbd5f7498646315[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:a1dd5caa73ca73aacbd32538bc79cf6b279d2b69d1653e5f9d2d78a3ab6f1963[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:ad053a2fb78835c7d891010f75e9dcf250e1e387a3a133a4ebe1400a7d4edd3a[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:e8840f341a386c9e161722afa22870b3f4fd3d2352bf049dfb2f749b14505971[0m
+[0m[[0m[0minfo[0m] [0m[0mdeleted: sha256:595ce3473178949fe44ade7f60abeb420a1b7805bb0a4263f10519b9412959fa[0m
+[0m[[0m[0minfo[0m] [0m[0mTotal reclaimed space: 90.82MB[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image play-scala-hello-world-tutorial with tags [1.0-SNAPSHOT][0m

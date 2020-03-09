@@ -15,3 +15,10 @@ lazy val root = (project in file("."))
       "-Xfatal-warnings"
     )
   )
+
+//enable two plugins:
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+
+//make file runnable:
+mainClass in Compile := Some("com.example.QuickstartServer")

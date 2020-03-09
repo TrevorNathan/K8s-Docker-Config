@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/trevor/Desktop/docker/scalaApp/play-scala-hello-world-tutorial/conf/routes
-// @DATE:Mon Mar 09 12:30:27 EAT 2020
+// @SOURCE:/home/trevor/Desktop/docker/scalaApps/play-scala-hello-world-tutorial/conf/routes
+// @DATE:Mon Mar 09 13:22:52 EAT 2020
 
 import play.api.mvc.Call
 
